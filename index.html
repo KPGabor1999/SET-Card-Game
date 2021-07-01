@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="titleScreen" hidden>
+    <img id="gameLogo" src="SET logo.png" height="350px" hidden></br>
+
+        <div id='mainMenu' class="mainMenu">
+        <span class='menuItem'><a href="https://fejlesztojatekvilag.hu/uploaded/set_magyar_szabaly.pdf" target="_blank">Játékszabály</a></br></span>
+
+        <span class="menuItem">Játékosok száma:</span></br>
+        <select id="setNumberOfPlayers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select></br>
+            <div id="setPlayerNames" hidden>
+                <!--Ide generáld a névadó mezőket.-->
+            </div>
+
+        <span class="menuItem">Játékmód:</span></br>
+        <input type="radio" name="setGameMode" id="practiceMode" value="practice" checked>Gyakorlás
+        <input type="radio" name="setGameMode" id="competitiveMode" value="competitive">Verseny</br>
+
+        <div id="moreOptions" hidden>
+            <span class="menuItem">'Van-e benne SET?' gomb:</span></br>
+            <input type="radio" name="setHasSetBtn" id="hasSetBtnEnabled"  value="enable" checked>Legyen
+            <input type="radio" name="setHasSetBtn" id="hasSetBtnDisabled" value="disable">Ne legyen</br>
+
+            <span class="menuItem">'SET mutatása' gomb:</span></br>
+            <input type="radio" name="setShowSetBtn" id="showSetBtnEnabled" value="enable" checked>Legyen
+            <input type="radio" name="setShowSetBtn" id="showSetBtnDisabled" value="disable">Ne legyen</br>
+
+            <span class="menuItem">3 lapos kiegészítés:</span></br>
+            <input type="radio" name="set3CardAddition" id="manual3CardAddition" value="manual" checked>Külön gomb
+            <input type="radio" name="set3CardAddition" id="automatic3CardAddition" value="automatic">Automatikus
+        </div></br>
+
+        <button id="startGameBtn">START</button>
+        </div>
+
+    </div>
+
+    <div id="gameplayScreen" hidden>
+        <div id="timer" class="timer" hidden></div>
+
+        <table id="scoreboard">
+            <!--Ide generálod a játékosok pontjelzőit.-->
+        </table>
+
+        <table id="gameGrid" hidden>
+            <!--Ide rakd a kártyákat.-->
+        </table>
+
+        <div id="results" class="winners" hidden>
+            <span class="winner">Győztesek</span></br>
+            <!--Ide generáld őket span-ekkel-->
+        </div>
+        <button id="newGameBtn" class="helpBtn" hidden>Új játék</button>
+
+        <table id="helpBtns">
+            <tr>
+                <td id="hasSetBtn" class="helpBtn" hidden>
+                    Van-e SET?
+                </td>
+                <td id="showSetBtn" class="helpBtn" hidden>
+                    Hol van SET?
+                </td>
+                <td id="add3Cards" class="helpBtn" hidden>
+                    3 kártya hozzáadása.
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

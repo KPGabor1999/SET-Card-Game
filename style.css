@@ -1,0 +1,133 @@
+body{
+    text-align: center;                         /*Képek és szöveges objektumok középre igazítása.*/
+    background-color: rgb(72,46,146);
+}
+.mainMenu{
+    width: 250px;
+    /*height: 250px;*/
+    margin: auto;                               /*div-ek középre igazítása*/
+    background-color: white;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+}
+.winners{
+    width: 500px;
+    margin: auto;                               /*div-ek középre igazítása*/
+    background-color: white;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+}
+.menuItem{
+    font-family: Arial, Helvetica, sans-serif;  /*Alapvető betű opciók.*/
+    font-size: 16px;
+    font-weight: bold;
+    /*color: rgb(72,46,146);*/                  /*Esetleges betűszín beállítás.*/
+}
+.inactivebr{
+    display: none;
+}
+.timer{
+    margin: auto;
+    width: 500px;
+    background-color: white;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+#scoreboard{
+    width: 760px;
+    height: 160px;
+    margin: auto;
+    background-color: white;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+#helpBtns{
+    margin: auto;
+}
+.helpBtn{
+    background-color: white;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: center;
+}
+.disabledHelpBtn{
+    background-color: gray;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: center;
+}
+.helpBtn:hover{
+    background-color: gray;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: center;
+}
+.helpBtnYes{
+    background-color: green;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: center;
+}
+.helpBtnNo{
+    background-color: red;
+    border: 10px solid rgb(0, 183, 255);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: center;
+}
+#gameGrid{
+    margin: auto;
+    transform: rotate(90deg);
+}
+/*#laidOutCard{
+    transform: rotate(90deg);
+    padding-left: 6%;
+    padding-right: 10%;
+}*/
+.unSelectedPlayer:hover{
+    background-color: gray;
+}
+.selectedPlayer{
+    background-color: gray;
+}
+.bannedPlayer{
+    background-color: red; 
+}
+/*.unSelectedCard{
+
+}*/
+.unSelectedCard:hover{
+    background-color: yellow;
+    /*border: 1px solid red;*/
+}
+.markedCard{
+    background-color: red;
+}
+.selectedCard{
+    background-color: yellow;
+}
+.winner{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
